@@ -1,0 +1,7 @@
+gradio
+python-dotenv
+tavily-python
+arxiv
+langchain
+langchain-community
+openai

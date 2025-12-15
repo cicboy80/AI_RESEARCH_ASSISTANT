@@ -4,7 +4,7 @@ import os
 import arxiv
 import gradio as gr
 from tavily import TavilyClient
-from langchain_community.chat_models import ChatOpenAI
+from langchain_openai import ChatOpenAI
 from langchain_core.messages import SystemMessage, HumanMessage
 
 # ====== Environment Setup ======

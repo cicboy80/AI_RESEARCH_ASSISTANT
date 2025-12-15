@@ -5,7 +5,7 @@ import arxiv
 import gradio as gr
 from tavily import TavilyClient
 from langchain_community.chat_models import ChatOpenAI
-from langchain.schema import SystemMessage, HumanMessage
+from langchain_core.messages import SystemMessage, HumanMessage
 
 # ====== Environment Setup ======
 # Hugging Face injects secrets automatically via Repo > Settings > Secrets
@@ -84,7 +84,7 @@ Guidelines:
     ]
 
     # Generate summary
-    response = llm(messages)
+    response = llm.invoke(messages)
 
     # Combine results into readable markdown
     summary = f"### 🧠 Summary\n{response.content}\n\n**Sources:**\n" + \

@@ -1,7 +1,5 @@
 gradio
-python-dotenv
 tavily-python
 arxiv
-langchain
-langchain-community
-openai
+langchain-core
+langchain-openai>=0.3.9

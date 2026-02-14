@@ -9,11 +9,15 @@ app_file: app.py
 pinned: false
 ---
 
-# AI Research Assistant 🤖📚
+# AI Research Assistant 
 
-A **Gradio** app that helps you research a topic by turning a question into a structured response (summary + key points + next steps). Designed as a lightweight “research copilot” you can run locally or deploy on Hugging Face Spaces.
+A **Gradio-based** research assistant that turns a question into a structured, source-aware response (summary + key points + next steps). Designed as a lightweight “research copilot” you can run locally or deploy on Hugging Face Spaces.
 
-> ⚠️ Educational project only — always verify important information with primary sources.
+### Design focus
+
+This project focuses on retrieval-augmented research and verifiable synthesis rather than free-form text generation. The assistant separates information gathering from summarisation, encouraging grounded answers and traceable reasoning when scanning unfamiliar topics.
+
+The goal is to demonstrate how lightweight LLM tools can support early-stage research while keeping outputs structured, concise, and easy to validate against primary sources.
 
 ## What it does
 - Accepts a research question or topic prompt
@@ -29,7 +33,7 @@ A **Gradio** app that helps you research a topic by turning a question into a st
 └── README.md
 ```
 
-## Getting started (local)
+## Local development
 
 ### 1. Clone and install
 
